@@ -1,7 +1,7 @@
 import 'semantic-ui-css/semantic.min.css'
 
 import React from 'react';
-import {Segment, Divider, Button, Grid} from 'semantic-ui-react'
+import {Segment, Divider, Button, Grid, Dimmer} from 'semantic-ui-react'
 import BingoBoard from "./Bingo/BingoBoard/BingoBoard";
 import EventConsole from "./EventConsole/EventConsole";
 import UserStatus from "./UserStatus/UserStatus";
@@ -9,7 +9,8 @@ import UserStatus from "./UserStatus/UserStatus";
 function App() {
   return (
     <Segment>
-      <Segment>
+      <Dimmer.Dimmable as={Segment} dimmed={true} blurring>
+        <Dimmer simple />
         <Grid columns='equal'>
           <Grid.Row>
             <Grid.Column>
@@ -25,8 +26,8 @@ function App() {
           </Grid.Row>
         </Grid>
         <Divider vertical>VS</Divider>
-      </Segment>
-      <Button attached='bottom' color='green' size='huge' fluid>Game Start</Button>
+      </Dimmer.Dimmable>
+      <Button attached='bottom' color='twitter' size='huge' fluid>Game Start</Button>
     </Segment>
   );
 }
