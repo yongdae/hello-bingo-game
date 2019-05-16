@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Segment, Container} from "semantic-ui-react";
+import {Grid} from "semantic-ui-react";
 import BingoCell from "../BingoCell/BingoCell";
 
 class BingoBoard extends Component {

@@ -1,7 +1,7 @@
 import 'semantic-ui-css/semantic.min.css'
 
 import React from 'react';
-import {Segment, Divider, Button, Grid, Header, Icon, Feed} from 'semantic-ui-react'
+import {Segment, Divider, Button, Grid} from 'semantic-ui-react'
 import BingoBoard from "./Bingo/BingoBoard/BingoBoard";
 import EventConsole from "./EventConsole/EventConsole";
 import UserStatus from "./UserStatus/UserStatus";
@@ -28,7 +28,6 @@ function App() {
       </Segment>
       <Button attached='bottom' color='green' size='huge' fluid>Game Start</Button>
     </Segment>
-
   );
 }
 
