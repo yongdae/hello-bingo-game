@@ -88,8 +88,6 @@ class PlayGroundContainer extends Component {
       let numbers = [];
 
       for (let column = 0; column < bingoBoard.length ; row--, column++) {
-        console.log(row);
-        console.log(column);
         let cell = bingoBoard[row][column];
         if (cell.checked) {
           count++;

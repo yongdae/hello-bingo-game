@@ -34,6 +34,9 @@ class EventConsole extends Component {
       data.push(e.join(', '));
     });
 
+    if (-1 !== this.state.history.findIndex(e => e.summary === data.join(' / ')))
+      return;
+
     let history = insert(
         this.state.history,
         0,
