@@ -1,7 +1,7 @@
 import { createStore, compose, combineReducers } from 'redux';
-import * as base from './base';
+import bingo from './bingo';
 
-const reducers = combineReducers(base);
+const reducers = combineReducers({ bingo: bingo });
 
 // 개발 모드 일때만 적용
 const isDev = process.env.NODE_ENV === 'development';
